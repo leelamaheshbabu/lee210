@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.8.142
+- hosts: localhost
   become: yes
   gather_facts: no
   tasks:
@@ -11,8 +11,9 @@
       recreate: yes
       pull: yes
       restart: yes
-      hostname: 172.31.8.142
+      hostname: localhost
       restart_policy: unless-stopped
       ports:
          - "999:80"
+
 
