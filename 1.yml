@@ -5,15 +5,15 @@
   - name: starting leela java docker
     docker_container:
       name: leela-java
-      image: java
+      image: openjdk
       state: started
       recreate: yes
       pull: yes
       restart: yes
-      hostname: localhost
       restart_policy: unless-stopped
       ports:
          - "555"
+
 
 
 
