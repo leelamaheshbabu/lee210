@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+  become: yes
+  gather_facts: no
+  tasks:
+  - name: starting mahesh nginx docker
+    docker_container:
+      name: nginx
+      image: nginx
+      state: started
+      recreate: yes
+      pull: yes
+      restart: yes
+      hostname: localhost
+      restart_policy: unless-stopped
+      ports:
+         - "999:80"
+
+
