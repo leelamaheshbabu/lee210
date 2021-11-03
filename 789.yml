@@ -3,7 +3,7 @@
   become: yes
   gather_facts: no
   tasks:
-  - name: starting mahesh nginx docker
+  - name: starting leela nginx docker
     docker_container:
       name: nginx
       image: nginx
@@ -15,5 +15,6 @@
       restart_policy: unless-stopped
       ports:
          - "999:80"
+
 
 
