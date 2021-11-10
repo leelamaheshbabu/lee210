@@ -11,7 +11,7 @@
       recreate: yes
       pull: yes
       restart: yes
-      hostname: 10.168.188.92
+      hostname: localhost
       restart_policy: unless-stopped
       ports:
          - "999:80"
