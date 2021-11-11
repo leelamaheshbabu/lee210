@@ -11,6 +11,7 @@
       recreate: yes
       pull: yes
       restart: yes
+      hostname: localhost
       restart_policy: unless-stopped
       ports:
          - "555"
